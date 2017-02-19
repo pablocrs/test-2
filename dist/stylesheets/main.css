@@ -1,0 +1,27 @@
+body, * {
+  font-family: sans-serif;
+  background: #283772;
+}
+
+.c-menu ul li {
+  float: left;
+  list-style: none;
+  padding: 10px 15px;
+  color: white;
+  position: relative;
+}
+.c-menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+.c-menu ul li > ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+}
+.c-menu ul li.is-active > ul {
+  display: block;
+}
