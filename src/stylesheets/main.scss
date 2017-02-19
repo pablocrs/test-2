@@ -1,0 +1,32 @@
+body, * {
+  font-family: sans-serif;
+  background: #283772;
+}
+
+.c-menu{
+  ul{
+    li{
+      float: left;
+      list-style: none;
+      padding: 10px 15px;
+      color: white;
+      position: relative;
+      a{
+        color: white;
+        text-decoration: none;
+      }
+      >ul{
+        position: absolute;
+        display: none;
+        top: 100%;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+      }
+      &.is-active>ul{
+        display: block;
+      }
+    }
+  }
+
+}
